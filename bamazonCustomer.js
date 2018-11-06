@@ -69,6 +69,12 @@ function updateQuantity(answer, res) {
         ],
         function (err, res) {
             if (err) throw err;
-            console.log("UPDATED!")
+            console.log("UPDATED!");
         })
+    //BUG: Same bug as former. Async causing prompt to run before returning SQL queries.
+    inquirer.prompt({
+        name: 'payment',
+        type: 'confirm',
+        message: `Your total is $${answer.howMany * res[answer.buyer - 1].price}`,
+    })
 }
