@@ -18,7 +18,7 @@ An Amazon-like storefront with MySQL. The app will take in orders from customers
 
 ## If not, the app should log a phrase like Insufficient quantity!, and then prevent the order from going through.
 
-![Bamazon-Item-List](https://github.com/JrewGit/bamazon/blob/master/images/bamazonIDRequest.png)
+![Bamazon-Item-List](https://github.com/JrewGit/bamazon/blob/master/images/bamazonInsufficientFunds.png)
 
 ## If the store does have enough of the product, it fulfills the customer's order and updates the SQL database to reflect the remaining quantity.
 
