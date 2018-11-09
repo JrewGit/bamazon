@@ -23,10 +23,9 @@ function start() {
         for (let i = 0; i < res.length; i++) {
             console.log(`${res[i].item_id} | ${res[i].product_name} | $${res[i].price}`)
         }
+        tobuy();
     })
-    //BUG: Prompting before the query is returned.
     //Calls a function that prompts the user which item they want to buy.
-    tobuy();
 }
 
 function tobuy() {
@@ -75,6 +74,6 @@ function updateQuantity(answer, res) {
     inquirer.prompt({
         name: 'payment',
         type: 'confirm',
-        message: `Your total is $${answer.howMany * res[answer.buyer - 1].price}`,
+        message: `Your total is $${answer.howMany * res[answer.buyer - 1].price}. Is that correct?`,
     })
 }
