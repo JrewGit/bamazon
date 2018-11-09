@@ -30,4 +30,4 @@ An Amazon-like storefront with MySQL. The app will take in orders from customers
 
 ## If a manager selects View Low Inventory, then it should list all items with an inventory count lower than five.
 
-![Bamazon-Item-List](https://github.com/JrewGit/bamazon/blob/master/images/bamazonManagerLow.png)
+![Bamazon-Item-List](https://github.com/JrewGit/bamazon/blob/master/images/bamazonLow.png)
